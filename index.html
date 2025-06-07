@@ -11,7 +11,6 @@
       font-family: 'Courier New', Courier, monospace;
       padding: 40px 20px;
       line-height: 1.7;
-      text-align: center;
     }
 
     img.logo {
@@ -24,6 +23,7 @@
 
     h1, h2 {
       color: #ff00cc;
+      text-align: center;
       text-shadow: 0 0 6px #ff00cc, 0 0 12px #ff33cc;
       animation: flicker 1.8s infinite alternate;
     }
@@ -45,13 +45,24 @@
     .section {
       margin: 50px auto;
       max-width: 800px;
+      text-align: left;
+    }
+
+    .intro {
+      max-width: 800px;
+      margin: 0 auto 40px;
+      text-align: left;
     }
 
     ul {
       list-style: square;
       padding-left: 20px;
-      text-align: left;
       margin-top: 15px;
+    }
+
+    .buttons {
+      text-align: center;
+      margin-top: 40px;
     }
 
     .buttons a {
@@ -85,7 +96,10 @@
   <img src="qaexe-banner.png" alt="QA.exe Banner Logo" class="logo" />
 
   <h1>Tactical QA Automation</h1>
-  <p><strong>Mark Rosenthal</strong> – Contract QA Engineer. I build AI-assisted test automation ecosystems for modern dev teams. Faster cycles. Cleaner coverage. Bulletproof pipelines.</p>
+
+  <div class="intro">
+    <p><strong>Mark Rosenthal</strong> – Contract QA Engineer. I build AI-assisted test automation ecosystems for modern dev teams. Faster cycles. Cleaner coverage. Bulletproof pipelines.</p>
+  </div>
 
   <!-- 🧠 About -->
   <div class="section">
@@ -118,7 +132,7 @@
   </div>
 
   <!-- 🔗 Contact -->
-  <div class="section buttons">
+  <div class="buttons">
     <a href="mailto:mrosenthal@live.com">📧 Email Me</a>
     <a href="resume.pdf" target="_blank">📄 View Resume</a>
     <a href="https://github.com/qaexe" target="_blank">💻 GitHub</a>
