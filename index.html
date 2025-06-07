@@ -6,93 +6,120 @@
   <title>QA.exe – Tactical QA Automation</title>
   <style>
     body {
-      background-color: #0d0d0d;
-      color: #ccffcc;
-      font-family: "Courier New", Courier, monospace;
-      padding: 40px;
-      line-height: 1.6;
+      background: linear-gradient(to bottom, #0a0a0a, #000000);
+      color: #cccccc;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 40px 20px;
+      line-height: 1.7;
+      text-align: center;
     }
 
     img.logo {
-      display: block;
-      margin: 0 auto 20px;
-      width: 120px;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 30px;
     }
 
     h1, h2 {
-      color: #00ff99;
+      color: #ff00cc;
+      text-shadow: 0 0 6px #ff00cc, 0 0 12px #ff33cc;
+      animation: flicker 1.8s infinite alternate;
+    }
+
+    p, li {
+      color: #cccccc;
     }
 
     a {
-      color: #66ccff;
+      color: #00ffff;
       text-decoration: none;
+      transition: 0.3s;
     }
 
     a:hover {
-      text-decoration: underline;
+      text-shadow: 0 0 6px #00ffff;
     }
 
     .section {
-      margin-bottom: 40px;
+      margin: 50px auto;
+      max-width: 800px;
     }
 
     ul {
-      margin-top: 10px;
+      list-style: square;
+      padding-left: 20px;
+      text-align: left;
+      margin-top: 15px;
     }
 
-    .emoji {
-      margin-right: 8px;
+    .buttons a {
+      display: inline-block;
+      margin: 10px 15px;
+      padding: 10px 20px;
+      background-color: transparent;
+      border: 2px solid #00ffff;
+      color: #00ffff;
+      border-radius: 8px;
+      font-weight: bold;
+      text-shadow: 0 0 5px #00ffff;
+      transition: 0.3s;
+    }
+
+    .buttons a:hover {
+      background-color: #00ffff;
+      color: #000000;
+      box-shadow: 0 0 12px #00ffff, 0 0 20px #00ffff;
+    }
+
+    @keyframes flicker {
+      0% { opacity: 1; }
+      100% { opacity: 0.9; text-shadow: 0 0 8px #ff00cc, 0 0 18px #ff00cc; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Logo -->
-  <img src="QA.exe.png" alt="QA.exe Logo" class="logo" />
+  <!-- 🔥 New Full Banner Logo -->
+  <img src="qaexe-banner.png" alt="QA.exe Banner Logo" class="logo" />
 
-  <!-- Title -->
-  <h1>QA.exe – Tactical QA Automation</h1>
+  <h1>Tactical QA Automation</h1>
+  <p><strong>Mark Rosenthal</strong> – Contract QA Engineer. I build AI-assisted test automation ecosystems for modern dev teams. Faster cycles. Cleaner coverage. Bulletproof pipelines.</p>
 
-  <p>I’m <strong>Mark Rosenthal</strong>, a contract QA engineer with 8+ years in test automation. I use AI to deliver manual + automated test suites in hours—not weeks.</p>
-
-  <!-- About Me -->
+  <!-- 🧠 About -->
   <div class="section">
     <h2>👨‍💻 About Me</h2>
-    <p>I build high-velocity QA ecosystems for startups and dev teams. From Cypress-based frontends to backend API coverage with Supertest and Postman — all integrated seamlessly into CI/CD pipelines.</p>
+    <p>I specialize in building high-velocity QA systems from scratch — frontend Cypress, backend API automation with Supertest/Postman, and seamless CI/CD integrations. Whether you're scaling or stabilizing, I deliver in hours—not weeks.</p>
   </div>
 
-  <!-- QA Ecosystems -->
+  <!-- 🧱 QA Ecosystems -->
   <div class="section">
     <h2>🧱 QA Ecosystems I Build</h2>
     <ul>
       <li>Cypress-based frontend automation</li>
-      <li>Supertest + Postman backend API suites</li>
-      <li>Zephyr & Jira manual test tracking</li>
-      <li>GitHub Actions + Jenkins CI/CD triggers</li>
-      <li>Flaky test triage & reliability scoring</li>
-      <li>QA dashboards + stakeholder visibility</li>
+      <li>Supertest + Postman API suites</li>
+      <li>Zephyr & Jira test management</li>
+      <li>GitHub Actions + Jenkins triggers</li>
+      <li>Flaky test triage + reliability scoring</li>
+      <li>Stakeholder dashboards + test reporting</li>
     </ul>
   </div>
 
-  <!-- Documentation & Training -->
+  <!-- 📔 Docs & Training -->
   <div class="section">
     <h2>📔 Documentation & Training</h2>
     <ul>
       <li>Fully documented test suites</li>
-      <li>Onboarding guides & process docs</li>
-      <li>Walk-through videos + team training</li>
-      <li>QA hiring & long-term strategy support</li>
+      <li>Onboarding guides + internal process docs</li>
+      <li>Walkthrough videos + team training</li>
+      <li>Hiring guidance + long-term QA strategy</li>
     </ul>
   </div>
 
-  <!-- Links -->
-  <div class="section">
-    <h2>🔗 Links</h2>
-    <ul>
-      <li><a href="mailto:mrosenthal@live.com">📧 Email Me</a></li>
-      <li><a href="resume.pdf" target="_blank">📄 View My Resume</a></li>
-      <li><a href="https://github.com/qaexe" target="_blank">💻 GitHub Repo</a></li>
-    </ul>
+  <!-- 🔗 Contact -->
+  <div class="section buttons">
+    <a href="mailto:mrosenthal@live.com">📧 Email Me</a>
+    <a href="resume.pdf" target="_blank">📄 View Resume</a>
+    <a href="https://github.com/qaexe" target="_blank">💻 GitHub</a>
   </div>
 
 </body>
