@@ -3,27 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mark Rosenthal – QA Engineer Resume</title>
-  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+  <title>Mark Rosenthal – Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
   <style>
     body {
-      background-color: #0e0e0e;
-      color: #33ff99;
+      background-color: #0a0a0a;
+      color: #e0e0e0;
       font-family: 'Share Tech Mono', monospace;
+      padding: 60px 10%;
       line-height: 1.6;
-      padding: 2rem;
-      max-width: 850px;
-      margin: auto;
     }
 
-    h1, h2, h3 {
-      color: #ff4df8;
-      border-bottom: 1px solid #33ff99;
-      padding-bottom: 0.3em;
+    .neon-title {
+      font-size: 3em;
+      color: #ff00cc;
+      text-align: center;
+      margin-top: 40px;
+      text-shadow: 0 0 5px #ff00cc, 0 0 10px #ff00cc, 0 0 20px #ff33ff, 0 0 40px #ff66ff;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1.5s ease-out forwards, flicker 2s infinite alternate;
+    }
+
+    .neon-subtitle {
+      text-align: center;
+      color: #ccc;
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      font-family: 'Courier New', monospace;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1.5s ease-out forwards;
+      animation-delay: 0.5s;
+    }
+
+    .divider {
+      width: 180px;
+      margin: 0 auto 40px;
+      border-bottom: 2px solid #ff00cc;
+      box-shadow: 0 0 8px #ff00cc;
+      opacity: 0;
+      animation: fadeInUp 1.5s ease-out forwards;
+      animation-delay: 1s;
+    }
+
+    .resume-section {
+      margin-top: 40px;
+    }
+
+    h2 {
+      color: #00ffee;
+      text-shadow: 0 0 4px #00ffee;
+      margin-top: 40px;
     }
 
     a {
-      color: #33ccff;
+      color: #00ffee;
       text-decoration: none;
     }
 
@@ -31,76 +66,58 @@
       text-decoration: underline;
     }
 
-    .section {
-      margin-bottom: 2rem;
+    @keyframes flicker {
+      0%, 18%, 22%, 25%, 53%, 57%, 100% { opacity: 1; }
+      20%, 24%, 55% { opacity: 0.7; }
     }
 
-    .sub {
-      color: #bbb;
-      font-size: 0.9em;
-    }
-
-    .highlight {
-      color: #fffb00;
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Mark Rosenthal</h1>
-  <p>Cape Girardeau, Missouri, United States</p>
-  <p>Email: <a href="mailto:Mrosenthal@live.com">Mrosenthal@live.com</a><br>
-     Phone: (512) 487-4536<br>
-     LinkedIn: <a href="https://www.linkedin.com/in/mark-rosenthal-760007125" target="_blank">linkedin.com/in/mark-rosenthal</a></p>
 
-  <div class="section">
-    <h2>🚀 Summary</h2>
-    <p>Experienced QA Engineer with <span class="highlight">9+ years</span> in test automation, AI-driven QA strategies, CI/CD, and scalable testing frameworks. I build tools, train teams, and lead quality initiatives with a focus on automation, speed, and real-world impact. Specialized in Cypress, JIRA, GitHub automation workflows, and AI-accelerated QA.</p>
-  </div>
+  <h1 class="neon-title">📝 Resume</h1>
+  <p class="neon-subtitle">QA Engineer • Automation Specialist • AI Architect</p>
+  <div class="divider"></div>
 
-  <div class="section">
-    <h2>🧠 Technical Skills</h2>
+  <div class="resume-section">
+    <h2>Mark Rosenthal</h2>
+    <p>Austin, TX (Remote OK) • <a href="mailto:mark@example.com">mark@example.com</a> • <a href="https://github.com/realmookulus" target="_blank">GitHub</a></p>
+
+    <h2>Summary</h2>
+    <p>Seasoned QA Engineer with 8+ years of experience in automation, CI/CD, and team leadership. Specializes in Cypress, API testing, and QA process optimization. Founder of QA.exe – a tactical consulting brand for fast-moving engineering teams.</p>
+
+    <h2>Technical Skills</h2>
     <ul>
-      <li><strong>AI/Automation:</strong> AI Test Generation, Cypress (Expert), Selenium, Postman, Segment</li>
-      <li><strong>DevOps & Cloud:</strong> Jenkins, Docker, Kubernetes, AWS, GCP</li>
-      <li><strong>Management:</strong> JIRA, Confluence, GitHub Workflow Design, Release Management</li>
-      <li><strong>Testing:</strong> K6 Load Testing, Cross-Browser Testing, TestRail, Zephyr</li>
-      <li><strong>Languages:</strong> JavaScript, SQL, Bash</li>
+      <li>⚙️ Cypress, Supertest, Selenium</li>
+      <li>📡 API Automation – Postman, Swagger, REST</li>
+      <li>📊 Zephyr, Jira, GitHub, CI/CD</li>
+      <li>📦 AWS, Docker, Kubernetes</li>
+      <li>🧠 AI tools for QA speed + accuracy</li>
+    </ul>
+
+    <h2>Experience</h2>
+    <p><strong>FloSports</strong> — QA Engineer (2016 – 2024)</p>
+    <ul>
+      <li>Led E2E automation and test strategy across multiple product lines</li>
+      <li>Implemented Cypress and CI pipelines from scratch (AWS + Jenkins)</li>
+      <li>Built structured test plans and reusable regression suites</li>
+    </ul>
+
+    <h2>Education</h2>
+    <p><strong>Austin Community College</strong> — Associate Degree (2012 – 2016)</p>
+
+    <h2>Certifications & Achievements</h2>
+    <ul>
+      <li>🏆 Hackathon finalist – custom QA tooling</li>
+      <li>🧠 Trained teams in Cypress + automation strategy</li>
     </ul>
   </div>
 
-  <div class="section">
-    <h2>💼 Work Experience</h2>
-    <h3>FloSports – QA Engineer / QA Lead</h3>
-    <p class="sub">Austin, TX | June 2016 – Present</p>
-    <ul>
-      <li>Led automation strategy across multiple teams using AI-enhanced Cypress workflows</li>
-      <li>Founded & ran the QA Guild — established Shift Left testing culture org-wide</li>
-      <li>Built company-wide CI/CD automation pipelines, GitHub PR rules, and release approvals</li>
-      <li>Structured JIRA releases and mentored teams on scalable QA practices</li>
-      <li>Organized company-wide Bug Bashes and live Dogfooding sessions to surface hidden issues</li>
-    </ul>
-
-    <h3>Neighbors Emergency Center – ER Tech</h3>
-    <p class="sub">Sept 2015 – June 2016</p>
-
-    <h3>Seton Healthcare Family – ER Tech</h3>
-    <p class="sub">Austin, TX | Oct 2007 – June 2016</p>
-  </div>
-
-  <div class="section">
-    <h2>🏆 Achievements</h2>
-    <ul>
-      <li>🏁 Led multiple org-wide QA rollouts & framework rebuilds</li>
-      <li>🤖 Implemented AI-powered testing strategies that slashed manual test time</li>
-      <li>📈 Created GitHub workflows adopted company-wide for version control and deployment</li>
-      <li>🎓 Trained 50+ devs and QAs on Cypress and automated testing culture</li>
-      <li>🥇 Hackathon winner — 3rd place solo, company-wide innovation sprint</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>📚 Education</h2>
-    <p>Austin Community College (2012 – 2016)</p>
-  </div>
 </body>
 </html>
